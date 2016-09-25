@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: false }));
-console.log(__dirname);
+
 app.use('/', express.static(__dirname + '/../../www'));
 
 app.listen(port, () => {
