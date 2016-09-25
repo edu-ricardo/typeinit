@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "prestart": "",
-    "start": "node build/server"
+    "start": "gulp && node build/server"
   },
   "author": "edu-ricardo",
   "license": "MIT",
@@ -14,6 +13,10 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "gulp-typescript": "^3.0.1",
     "mongoose": "^4.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3"
   }
 }
